@@ -1,0 +1,17 @@
+.Person {
+    background-color: coral;
+    border: 2px solid rebeccapurple;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.Person:hover {
+    background-color: salmon;
+    border: 2px solid slateblue;
+    cursor: pointer;
+    
+}
