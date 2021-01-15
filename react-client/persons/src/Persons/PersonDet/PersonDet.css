@@ -1,0 +1,14 @@
+.PersonDet {
+    background-color: chocolate;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    padding: 10px;
+    right: 30px;
+    width: 15%;
+    height: 300px;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+}

@@ -1,10 +1,7 @@
 package pl.ujo.personrest.restService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.ujo.personrest.model.Person;
 import pl.ujo.personrest.service.PersonService;
 
@@ -26,5 +23,11 @@ public class PersonRest {
     @GetMapping("/person")
     public Person getByPersonId(@RequestParam("id") int personId) {
         return personService.getById(personId);
+    }
+
+    @DeleteMapping("/person/del/{id}")
+    public Person deletePerson(@PathVariable("id") int personId) {
+        System.out.println("Kasuję person " + personId);
+        return personService.remove(personId);
     }
 }
